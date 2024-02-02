@@ -181,6 +181,53 @@ main {
     opacity: 1;
 }
 
+/*Quoute element*/
+.quotes {
+    background-color: #1e1e1e;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #333;
+    /* VS Code sidebar background color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lines {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.line {
+    height: 1.5em;
+    background-color: #3a3a3a;
+    /* VS Code sidebar line color */
+    margin-bottom: 5px;
+    color: #6e7681;
+}
+
+.quote {
+    padding-left: 20px;
+}
+
+.quote:first-child {
+    padding-top: 20px;
+}
+
+.quote p {
+    color: #ce9178
+}
+
+.quote span {
+    color: #6a9955
+}
+
 
 @media (max-width : 430px) {
     body {
