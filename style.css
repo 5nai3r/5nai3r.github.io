@@ -30,7 +30,9 @@ main {
 
 }
 
-
+.hidden {
+    display: none;
+}
 
 .accent {
     background: #12c2e9;

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loader.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
@@ -17,9 +18,31 @@
         content="Front-End Developer | Explore innovative and visually stunning web development projects and skills.Discover cutting-edge designs, seamless user experiences, and a passion for transforming ideas into captivating digital solutions. Ready to elevate your web presence or find your next Front-End Developer? Browse our portfolio now. ">
     <meta name="keywords" content="front-end developer, web developer, HTML, CSS, JavaScript, vue, vuejs, portfolio">
 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let startTime = new Date().getTime();
+            const minLoadTime = 1200;
+            window.onload = function () {
+                let endTime = new Date().getTime();
+                let loadTime = endTime - startTime;
+                let remainingTime = Math.max(0, minLoadTime - loadTime);
+                setTimeout(() => {
+                    document.querySelector('.loader-container').style.display = 'none';
+                }, remainingTime);
+            };
+
+        });
+
+    </script>
 </head>
 
 <body>
+
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
     <main>
         <div class="hero">
             <div>
@@ -30,7 +53,7 @@
                     web applications and seamless web experiences.</p>
             </div>
             <div class="logo">
-                <p class="accent" style="">
+                <p class="accent">
                     &LessLess;I/C&GreaterGreater;</p>
             </div>
         </div>
