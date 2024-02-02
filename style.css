@@ -42,11 +42,27 @@ main {
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 100%;
     font-size: inherit;
+    animation: GradientAnimation 6s ease infinite;
+    background-size: 133% 150%;
 }
 
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
 
 .box-panel {
     display: flex;
