@@ -1,207 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="loader.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="loader.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Portfolio</title>
 
-    <meta name="description"
-        content="Front-End Developer | Explore innovative and visually stunning web development projects and skills.Discover cutting-edge designs, seamless user experiences, and a passion for transforming ideas into captivating digital solutions. Ready to elevate your web presence or find your next Front-End Developer? Browse our portfolio now. ">
-    <meta name="keywords" content="front-end developer, web developer, HTML, CSS, JavaScript, vue, vuejs, portfolio">
-
+    <meta
+      name="description"
+      content="Front-End Developer | Explore innovative and visually stunning web development projects and skills.Discover cutting-edge designs, seamless user experiences, and a passion for transforming ideas into captivating digital solutions. Ready to elevate your web presence or find your next Front-End Developer? Browse our portfolio now. "
+    />
+    <meta
+      name="keywords"
+      content="front-end developer, web developer, HTML, CSS, JavaScript, vue, vuejs, portfolio"
+    />
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let startTime = new Date().getTime();
-            const minLoadTime = 1200;
-            window.onload = function () {
-                let endTime = new Date().getTime();
-                let loadTime = endTime - startTime;
-                let remainingTime = Math.max(0, minLoadTime - loadTime);
-                setTimeout(() => {
-                    document.querySelector('.loader-container').style.display = 'none';
-                }, remainingTime);
-            };
-
-        });
-
+      document.addEventListener("DOMContentLoaded", function () {
+        let startTime = new Date().getTime();
+        const minLoadTime = 1200;
+        window.onload = function () {
+          let endTime = new Date().getTime();
+          let loadTime = endTime - startTime;
+          let remainingTime = Math.max(0, minLoadTime - loadTime);
+          setTimeout(() => {
+            document.querySelector(".loader-container").style.display = "none";
+          }, remainingTime);
+        };
+      });
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="loader-container">
-        <div class="loader" style="--c2:#12c2e9"></div>
+      <div class="loader" style="--c2: #12c2e9"></div>
+    </div>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="modal-content">
+          <h2>Portfolio Update Available</h2>
+          <p>A new version is now available with improved UI and experience.</p>
+          <a
+            href="https://5nai3r.github.io/v2/"
+            rel="noopener noreferrer"
+            class="btn"
+          >
+            Visit Updated Site
+            <span class="icon">&#8599;</span>
+          </a>
+        </div>
+      </div>
     </div>
 
     <main>
-        <div class="hero">
-            <div>
-                <h1>Hi there! <br>
-                    this is <span class="accent">ismail</span><br>
-                    Frontend developer</h1>
-                <p>Resolving design problems, building smart user interfaces and useful interactions, developing rich
-                    web applications and seamless web experiences.</p>
-            </div>
-            <div class="logo">
-                <p class="accent">
-                    &LessLess;I/C&GreaterGreater;</p>
-            </div>
+      <div class="hero">
+        <div>
+          <h1>
+            Hi there! <br />
+            this is <span class="accent">ismail</span><br />
+            Frontend developer
+          </h1>
+          <p>
+            Resolving design problems, building smart user interfaces and useful
+            interactions, developing rich web applications and seamless web
+            experiences.
+          </p>
         </div>
-        <h2>Featured Projects</h2>
-        <div class="work">
-            <section class="box-panel">
-                <div class="widget-container">
-                    <div class="flip-box common-flip-style">
-                        <div class="box-front common-box-style" style="--link:url('./image/space-1.webp')">
-                            <div class="box-content-wrapper">
-                            </div>
-                        </div>
-                        <div class="box-back common-box-style box-bgi-effect"
-                            style="--link:url('./image/space-2.webp')">
-                            <div class="box-content-wrapper">
-                                <div class="box-content">
-                                    <a href="https://5nai3r.github.io/Frontend-design-challenges/space-tourism/"
-                                        target="_blank">Live
-                                        Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="box-panel">
-                <div class="widget-container">
-                    <div class="flip-box common-flip-style">
-                        <div class="box-front common-box-style" style="--link:url('./image/ecommerce-1.webp')">
-                            <div class="box-content-wrapper">
-
-                            </div>
-                        </div>
-                        <div class="box-back common-box-style box-bgi-effect"
-                            style="--link:url('./image/ecommerce-2.webp')">
-                            <div class="box-content-wrapper">
-                                <div class="box-content">
-                                    <a href="https://5nai3r.github.io/Frontend-design-challenges/ecommerce"
-                                        target="_blank">Live
-                                        Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="box-panel">
-                <div class="widget-container">
-                    <div class="flip-box common-flip-style">
-                        <div class="box-front common-box-style" style="--link:url('./image/todo-1.webp')">
-                            <div class="box-content-wrapper">
-
-                            </div>
-                        </div>
-                        <div class="box-back common-box-style box-bgi-effect" style="--link:url('./image/todo-2.webp')">
-                            <div class="box-content-wrapper">
-                                <div class="box-content">
-                                    <a href="https://5nai3r.github.io/Frontend-design-challenges/todo-app/dist/"
-                                        target="_blank">Live
-                                        Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="box-panel">
-                <div class="widget-container">
-                    <div class="flip-box common-flip-style">
-                        <div class="box-front common-box-style" style="--link:url('./image/time-1.webp')">
-                            <div class="box-content-wrapper">
-
-                            </div>
-                        </div>
-                        <div class="box-back common-box-style box-bgi-effect" style="--link:url('./image/time-2.webp')">
-                            <div class="box-content-wrapper">
-                                <div class="box-content">
-                                    <a href="https://5nai3r.github.io/Frontend-design-challenges/time-tracking-dashboard-main/"
-                                        target="_blank">Live
-                                        Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="box-panel">
-                <div class="widget-container">
-                    <div class="flip-box common-flip-style">
-                        <div class="box-front common-box-style" style="--link:url('./image/data-1.webp')">
-                            <div class="box-content-wrapper">
-
-                            </div>
-                        </div>
-                        <div class="box-back common-box-style box-bgi-effect" style="--link:url('./image/data-2.webp')">
-                            <div class="box-content-wrapper">
-                                <div class="box-content">
-                                    <a href="https://5nai3r.github.io/Frontend-design-challenges/fylo-data-storage-component-master/"
-                                        target="_blank">Live
-                                        Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="box-panel">
-                <div class="widget-container">
-                    <div class="flip-box common-flip-style">
-                        <div class="box-front common-box-style" style="--link:url('./image/card-1.webp')">
-                            <div class="box-content-wrapper">
-
-                            </div>
-                        </div>
-                        <div class="box-back common-box-style box-bgi-effect" style="--link:url('./image/card-2.webp')">
-                            <div class="box-content-wrapper">
-                                <div class="box-content">
-                                    <a href="https://5nai3r.github.io/Frontend-design-challenges/interactive-card-details-form-main/"
-                                        target="_blank">Live
-                                        Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="logo">
+          <p class="accent">&LessLess;I/C&GreaterGreater;</p>
         </div>
-        <h2>Favourite quotes </h2>
-        <div class="quotes">
-            <div class="quote">
-                <p>Make the best use of what is in your power, and take the rest as it happens.</p>
-                <span class="accent">Epictetus</span>
+      </div>
+      <h2>Featured Projects</h2>
+      <div class="work">
+        <section class="box-panel">
+          <div class="widget-container">
+            <div class="flip-box common-flip-style">
+              <div
+                class="box-front common-box-style"
+                style="--link: url('./image/space-1.webp')"
+              >
+                <div class="box-content-wrapper"></div>
+              </div>
+              <div
+                class="box-back common-box-style box-bgi-effect"
+                style="--link: url('./image/space-2.webp')"
+              >
+                <div class="box-content-wrapper">
+                  <div class="box-content">
+                    <a
+                      href="https://5nai3r.github.io/Frontend-design-challenges/space-tourism/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="quote">
-                <p>Simplicity is the ultimate sophistication.</p>
-                <span class="accent">Leonardo da Vinci</span>
+          </div>
+        </section>
+
+        <section class="box-panel">
+          <div class="widget-container">
+            <div class="flip-box common-flip-style">
+              <div
+                class="box-front common-box-style"
+                style="--link: url('./image/ecommerce-1.webp')"
+              >
+                <div class="box-content-wrapper"></div>
+              </div>
+              <div
+                class="box-back common-box-style box-bgi-effect"
+                style="--link: url('./image/ecommerce-2.webp')"
+              >
+                <div class="box-content-wrapper">
+                  <div class="box-content">
+                    <a
+                      href="https://5nai3r.github.io/Frontend-design-challenges/ecommerce"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="quote">
-                <p>The only way to do great work is to love what you do.</p>
-                <span class="accent">Steve Jobs</span>
+          </div>
+        </section>
+
+        <section class="box-panel">
+          <div class="widget-container">
+            <div class="flip-box common-flip-style">
+              <div
+                class="box-front common-box-style"
+                style="--link: url('./image/todo-1.webp')"
+              >
+                <div class="box-content-wrapper"></div>
+              </div>
+              <div
+                class="box-back common-box-style box-bgi-effect"
+                style="--link: url('./image/todo-2.webp')"
+              >
+                <div class="box-content-wrapper">
+                  <div class="box-content">
+                    <a
+                      href="https://5nai3r.github.io/Frontend-design-challenges/todo-app/dist/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
+
+        <section class="box-panel">
+          <div class="widget-container">
+            <div class="flip-box common-flip-style">
+              <div
+                class="box-front common-box-style"
+                style="--link: url('./image/time-1.webp')"
+              >
+                <div class="box-content-wrapper"></div>
+              </div>
+              <div
+                class="box-back common-box-style box-bgi-effect"
+                style="--link: url('./image/time-2.webp')"
+              >
+                <div class="box-content-wrapper">
+                  <div class="box-content">
+                    <a
+                      href="https://5nai3r.github.io/Frontend-design-challenges/time-tracking-dashboard-main/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="box-panel">
+          <div class="widget-container">
+            <div class="flip-box common-flip-style">
+              <div
+                class="box-front common-box-style"
+                style="--link: url('./image/data-1.webp')"
+              >
+                <div class="box-content-wrapper"></div>
+              </div>
+              <div
+                class="box-back common-box-style box-bgi-effect"
+                style="--link: url('./image/data-2.webp')"
+              >
+                <div class="box-content-wrapper">
+                  <div class="box-content">
+                    <a
+                      href="https://5nai3r.github.io/Frontend-design-challenges/fylo-data-storage-component-master/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="box-panel">
+          <div class="widget-container">
+            <div class="flip-box common-flip-style">
+              <div
+                class="box-front common-box-style"
+                style="--link: url('./image/card-1.webp')"
+              >
+                <div class="box-content-wrapper"></div>
+              </div>
+              <div
+                class="box-back common-box-style box-bgi-effect"
+                style="--link: url('./image/card-2.webp')"
+              >
+                <div class="box-content-wrapper">
+                  <div class="box-content">
+                    <a
+                      href="https://5nai3r.github.io/Frontend-design-challenges/interactive-card-details-form-main/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <h2>Favourite quotes</h2>
+      <div class="quotes">
+        <div class="quote">
+          <p>
+            Make the best use of what is in your power, and take the rest as it
+            happens.
+          </p>
+          <span class="accent">Epictetus</span>
         </div>
+        <div class="quote">
+          <p>Simplicity is the ultimate sophistication.</p>
+          <span class="accent">Leonardo da Vinci</span>
+        </div>
+        <div class="quote">
+          <p>The only way to do great work is to love what you do.</p>
+          <span class="accent">Steve Jobs</span>
+        </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
